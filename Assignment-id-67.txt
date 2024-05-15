@@ -1,0 +1,19 @@
+Natural join:
+SELECT s.roll_no, s.name, s.address, s.phone, s.age, sc.course_id
+FROM Student s
+JOIN StudentCourse sc ON s.roll_no = sc.roll_no;
+INNER JOIN:
+SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+INNER JOIN table2
+ON  table1.matching_column = table2.matching_column;
+ LEFT JOIN:
+SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+LEFT JOIN table2
+ON table1.matching_column = table2.matching_column
+RIGHT JOIN:
+SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+RIGHT JOIN table2
+ON table1.matching_column = table2.matching_column;
